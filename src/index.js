@@ -9,7 +9,7 @@ import { applyMiddleware, createStore } from 'redux';
 import rootReducer from './modules';
 import { thunk } from 'redux-thunk';
 
-const store = createStore(rootReducer, applyMiddleware(thunk));
+const store = createStore(rootReducer,window._ _PRELOADED_STATE_ _, applyMiddleware(thunk));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
